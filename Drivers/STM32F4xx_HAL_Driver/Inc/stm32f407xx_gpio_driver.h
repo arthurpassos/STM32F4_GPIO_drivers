@@ -62,9 +62,9 @@ typedef struct
 
 void hal_gpio_init(GPIO_TypeDef *GPIOx, GPIO_PIN_CONF_T gpio_conf);
 
-uint8_t hal_gpio_read(GPIO_TypeDef *GPIOx, uint16_t pin);
+uint8_t hal_gpio_read_pin(GPIO_TypeDef *GPIOx, uint16_t pin);
 
-void hal_gpio_write(GPIO_TypeDef *GPIOx, uint16_t pin, uint8_t data);
+void hal_gpio_write_pin(GPIO_TypeDef *GPIOx, uint16_t pin, uint8_t data);
 
 void hal_gpio_set_alt_func(GPIO_TypeDef *GPIOx, uint16_t pin, uint16_t alternateFunction);
 
